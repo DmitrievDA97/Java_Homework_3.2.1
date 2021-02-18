@@ -27,6 +27,14 @@ public class Post {
     private RepostsInfo repostsInfo;
     private ViewsInfo viewsInfo;
 
+    public Donut getDonut() {
+        return donut;
+    }
+
+    public void setDonut(Donut donut) {
+        this.donut = donut;
+    }
+
     public PostSource getPostSource() {
         return postSource;
     }
