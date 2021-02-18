@@ -11,13 +11,77 @@ public class Post {
     private int friendsOnly;
     private String postType;
     private int signerId;
-    private int canPin;
-    private int canDelete;
-    private int canEdit;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
     private int isPinned;
-    private int markedAsAds;
+    private boolean markedAsAds;
     private boolean isFavorite;
     private int postponedId;
+    private Donut donut;
+    private PostSource postSource;
+    private Geo geo;
+    private CommentsInfo commentsInfo;
+    private Copyright copyright;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+
+    public Copyright getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(Copyright copyright) {
+        this.copyright = copyright;
+    }
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
+    }
+
+    public ViewsInfo getViewsInfo() {
+        return viewsInfo;
+    }
+
+    public void setViewsInfo(ViewsInfo viewsInfo) {
+        this.viewsInfo = viewsInfo;
+    }
 
     public int getId() {
         return id;
@@ -99,27 +163,27 @@ public class Post {
         this.signerId = signerId;
     }
 
-    public int getCanPin() {
+    public boolean getCanPin() {
         return canPin;
     }
 
-    public void setCanPin(int canPin) {
+    public void setCanPin(boolean canPin) {
         this.canPin = canPin;
     }
 
-    public int getCanDelete() {
+    public boolean getCanDelete() {
         return canDelete;
     }
 
-    public void setCanDelete(int canDelete) {
+    public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
 
-    public int getCanEdit() {
+    public boolean getCanEdit() {
         return canEdit;
     }
 
-    public void setCanEdit(int canEdit) {
+    public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
 
@@ -131,11 +195,11 @@ public class Post {
         this.isPinned = isPinned;
     }
 
-    public int getMarkedAsAds() {
+    public boolean getMarkedAsAds() {
         return markedAsAds;
     }
 
-    public void setMarkedAsAds(int markedAsAds) {
+    public void setMarkedAsAds(boolean markedAsAds) {
         this.markedAsAds = markedAsAds;
     }
 
